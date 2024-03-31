@@ -1,7 +1,7 @@
 // Version 4.0.9
 const version = "4.0.9";
 const chalk = require("chalk");
-console.log(chalk.red(`Donkzz has started!!`))
+console.log(chalk.red(`Donkzz but better has started!!`))
 console.log(chalk.hex('#FFA500')(`If you encounter any issues, join our Discord: \nhttps://discord.gg/7A6gAdnBaw`))
 console.log(chalk.yellowBright(`Your version is: ${version}`))
 if (!process.version.startsWith('v20')) console.log(chalk.redBright('You are running a NodeJS version under v20. If you don\'t upgrade, you may get large lag spikes or ram overloads.'))
@@ -47,10 +47,10 @@ const axios = require("axios");
 const SimplDB = require("simpl.db");
 const stripAnsi = require("strip-ansi");
 const db = new SimplDB();
-axios.get("https://raw.githubusercontent.com/snappiee/Donkzz/main/index.js").then((res) => {
+axios.get("https://raw.githubusercontent.com/sarimwaniR/Donkzz/main/index.js").then((res) => {
   let v = res.data.match(/Version ([0-9]*\.?)+/)[0]?.replace("Version ", "");
   if (v && v !== version) {
-    console.log(chalk.bold.bgRed("There is a new version available: " + v + "\t\nPlease update by running the updater. \n" + chalk.underline("https://github.com/snappiee/Donkzz\n")));
+    console.log(chalk.bold.bgRed("There is a new version available: " + v + "\t\nPlease update by running the updater. \n" + chalk.underline("https://github.com/sarimwaniR/Donkzz\n")));
   }
 }).catch((error) => {
   console.log(error);
